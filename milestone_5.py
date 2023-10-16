@@ -41,7 +41,7 @@ class Hangman:
         '''
         guess = guess.lower()
         if guess in self.word:
-            print("Good guess!" + guess + " is in the word.")
+            print("Good guess! " + guess + " is in the word.")
             for letter in self.word:
                 if guess in self.word:
                     guess_index = self.word.index(guess)
@@ -50,7 +50,7 @@ class Hangman:
             return guess
         else:
             self.num_lives = self.num_lives - 1
-            print("Sorry," + guess + " is not in the word. Try again.")
+            print("Sorry, " + guess + " is not in the word. Try again.")
             print("You have " + str(self.num_lives) + " lives left.")
             
     
@@ -89,8 +89,9 @@ def play_game(word_list):
         if game.num_lives == 0:
             print("You lost!")
             break
-        elif game.num_letters >= 0:
+        elif game.num_letters > 0:
             game.ask_for_input()
+            
         elif game.num_lives != 0 and game.num_letters <= 0:
             print("Congratulations. You won the game!")
             break
@@ -100,3 +101,5 @@ word_list = ['Banana','Orange','Strawberry','Apple','Chicken']
 
 # Running the game
 play_game(word_list)
+
+
