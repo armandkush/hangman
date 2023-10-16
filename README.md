@@ -25,13 +25,16 @@ Usage instructions:
 
 File structure of the project:
 
-.
+
     ├── ...
-    ├── Hangman                 #Main folder
-    │   ├── milestone_2.py      # File containing milestone 2 tasks
-    │   ├── milestone_3.py      # File containing milestone 3 tasks
-    │   └── milestone_4.py      # File containing milestone 4 tasks
-    │   └── milestone_5.py      # File containing milestone 5 tasks
+    ├── Hangman                 # Main folder
+    ├── milestone_2.py      # File containing milestone 2 tasks
+    ├── milestone_3.py      # File containing milestone 3 tasks
+    ├── milestone_4.py      # File containing milestone 4 tasks
+    ├── milestone_5.py      # File containing milestone 5 tasks
+    ├── LICENSE
+    └── README.md
+
 
 
 
